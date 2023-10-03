@@ -1,0 +1,35 @@
+S01 Activity:
+1. List the books Authored by Marjorie Green.
+2. List the books Authored by Michael O'Leary.
+3. Write the author/s of "The Busy Executive's Database Guide".
+4. Identify the publisher of "But Is It User Friendly?".
+5. List the books published by Algodata Infosystems.
+
+
+1. List the books Authored by Marjorie Green (213-46-8915).
+Answers: 
+ - BU1032 - The Busy Executive's Database Guide
+ - BU2075 - You can Combat Computer Stress!
+
+2. List the books Authored by Michael O'Leary(267-41-2394).
+Answers: 
+ - BU1111 - Cooking with Computers
+ - TC7777 - Not register.
+
+3. Write the author/s of "The Busy Executive's Database Guide".
+Answer: 
+ - Marjorie Green
+
+4. Identify the publisher of "But Is It User Friendly?".
+Answer:
+ - Algodata Infosystems
+
+
+5.List the books published by Algodata Infosystems.
+Answers: 
+ - The Busy Executive's Database Guide
+ - Cooking with Computers
+ - Straight Talk About Computers
+ - But Is It User Friendly
+ - Secrets of Silicon Valley
+ - Net Etiquette
