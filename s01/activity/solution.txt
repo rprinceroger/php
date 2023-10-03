@@ -5,7 +5,7 @@ S01 Activity:
 4. Identify the publisher of "But Is It User Friendly?".
 5. List the books published by Algodata Infosystems.
 
-
+S01 Activity: 
 1. List the books Authored by Marjorie Green (213-46-8915).
 Answers: 
  - BU1032 - The Busy Executive's Database Guide
