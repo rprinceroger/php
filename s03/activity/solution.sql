@@ -32,3 +32,14 @@ UPDATE posts SET content = 'Hello to the people of the Earth!' WHERE title = 'Se
 
 -- Delete the user with an email of "johndoe@gmail.com".
 DELETE FROM users WHERE email = 'johndoe@gmail.com';
+
+SHOW TABLES;
+DESCRIBE users;
+DESCRIBE posts;
+DESCRIBE post_comments;
+DESCRIBE post_likes;
+
+SELECT * FROM posts WHERE author_id = 1;
+SELECT email, datetime_created FROM users;
+SELECT * FROM users;
+SELECT * FROM posts;
