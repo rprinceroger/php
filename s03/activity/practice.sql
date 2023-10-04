@@ -1,6 +1,11 @@
 mysql -h 127.0.0.1 -P 3306 -u root
 
-CREATE TABLE practice_db (
+
+CREATE DATABASE practice_db;
+
+USE practice_db;
+
+CREATE TABLE reviews (
     id INT PRIMARY KEY,
     review VARCHAR(500),
     datetime_created DATETIME,
@@ -21,3 +26,5 @@ SELECT * FROM reviews WHERE rating = 5;
 SELECT * FROM reviews WHERE rating = 1;
 
 UPDATE reviews SET rating = 5;
+
+SELECT * FROM reviews;
