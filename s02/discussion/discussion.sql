@@ -83,6 +83,8 @@ CREATE TABLE songs(
 );
 
 
+-- DROP TABLE users;
+
 -- To create a table
 CREATE TABLE users(
 	id INT NOT NULL AUTO_INCREMENT,
@@ -94,6 +96,9 @@ CREATE TABLE users(
 	address VARCHAR(50),
 	PRIMARY KEY(id)
 );
+
+-- ALTER TABLE users MODIFY email VARCHAR(50) NULL;
+-- DESCRIBE users;
 
 -- We used "INT" for integers.
 -- Used "NOT NULL" if it is required.
