@@ -7,11 +7,13 @@ SELECT * FROM songs WHERE length <=230;
 
 -- (3) Join the 'albums' and 'songs' tables.
 -- Only show the album name, song name, and song length.
-SELECT albums.album_title, songs.song_name, songs.length FROM albums
-	JOIN songs ON album_id = songs.id;
-/*
 SELECT albums.album_title, songs.song_name, songs.length FROM songs
 	JOIN albums ON album_id = albums.id;
+
+
+/*
+SELECT albums.album_title, songs.song_name, songs.length FROM albums
+	JOIN songs ON album_id = songs.id;
 
 
 SELECT albums.album_title, songs.song_name, songs.length FROM albums
@@ -20,12 +22,12 @@ SELECT albums.album_title, songs.song_name, songs.length FROM albums
 
 -- (4) Join the 'artists' and 'albums' tables.
 -- Find all albums that has letter A in its name.
-SELECT * FROM artists
-	JOIN albums ON artist_id = albums.id WHERE name LIKE "%a%";
-
-/*
 SELECT * FROM albums
 	JOIN artists ON artist_id = albums.id WHERE name LIKE "%a%";
+
+/*
+SELECT * FROM artists
+	JOIN albums ON artist_id = albums.id WHERE name LIKE "%a%";
 
 SELECT * FROM artists
 	JOIN albums ON artist_id = albums.artist_id WHERE name LIKE "%a%";
