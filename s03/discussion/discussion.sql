@@ -168,4 +168,8 @@ ALTER TABLE table_name CHANGE old_name new_name data_type;
 -- #getItRightTheFirstTime
 
 
+-- DELETE FROM songs;
+
+
+-- Object is to create a new table with artist and album visibility.
 
