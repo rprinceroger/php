@@ -43,7 +43,8 @@
 
 	 -->
 
-
+	 <p>introduce() Method: <?= $bootcamper1->introduce()?></p>
+	 <p>introduce() Method: <?= $bootcamper2->introduce()?></p>
 
 
 

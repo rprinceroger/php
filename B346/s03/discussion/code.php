@@ -82,7 +82,28 @@
 
 
 	//Mini Activity
+	//Mini-Activity 2
+	class Bootcamper {
+	    
+	    public $name;
+	    public $hobbies;
+	    public $favoriteGame;
+	    public $favoriteFood;
 
+	    public function __construct($name, $hobbies, $favoriteGame, $favoriteFood) {
+	        $this->name = $name;
+	        $this->hobbies = $hobbies;
+	        $this->favoriteGame = $favoriteGame;
+	        $this->favoriteFood = $favoriteFood;
+	    }
+
+	    public function introduce() {
+	        return "Hey, I am $this->name. I love $this->hobbies, and my favorite game is $this->favoriteGame. I like to eat $this->favoriteFood.";
+	    }
+	}
+
+	$bootcamper1 = new Bootcamper("Cee", "painting, writing, and cooking", "League of Legends", "sisig");
+	$bootcamper2 = new Bootcamper("Peter", "developing websites", "Valorant", "pizza");
 
 
 
