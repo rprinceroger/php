@@ -10,24 +10,30 @@
 <body>
 	<?php
 		// Display information in the browser
-		echo "<h2>Display Information</h2>";
-		echo "<h3>Person Information</h3>";
-		echo "Name: " . $person->getName() . "<br>";
-		echo "Age: " . $person->getAge() . "<br>";
-		echo "Address: " . $person->getAddress() . "<br>";
+	    // Create instances of Person, Student, and Employee
+	    $person = new Person('John Smith', 30, 'Quezon City, Metro Manila');
+	    $student = new Student('Jane Doe', 20, 'Makati City, Metro Manila', '2023-1980');
+	    $employee = new Employee('Mark Blain', 35, 'Pasig City, Metro Manila', 'Tech Team', 'Team Lead');
 
-		echo "<h3>Student Information</h3>";
-		echo "Name: " . $student->getName() . "<br>";
-		echo "Age: " . $student->getAge() . "<br>";
-		echo "Student ID: " . $student->getStudentId() . "<br>";
-		echo "Address: " . $student->getAddress() . "<br>";
+	    echo "<h2>Display Information</h2>";
+	    
+	    echo "<h3>Person Information</h3>";
+	    echo "Name: " . $person->getName() . "<br>";
+	    echo "Age: " . $person->getAge() . "<br>";
+	    echo "Address: " . $person->getAddress() . "<br>";
 
-		echo "<h3>Employee Information</h3>";
-		echo "Name: " . $employee->getName() . "<br>";
-		echo "Age: " . $employee->getAge() . "<br>";
-		echo "Team: " . $employee->getTeam() . "<br>";
-		echo "Role: " . $employee->getRole() . "<br>";
-		echo "Address: " . $employee->getAddress() . "<br>";
+	    echo "<h3>Student Information</h3>";
+	    echo "Name: " . $student->getName() . "<br>";
+	    echo "Age: " . $student->getAge() . "<br>";
+	    echo "Student ID: " . $student->getStudentId() . "<br>";
+	    echo "Address: " . $student->getAddress() . "<br>";
+
+	    echo "<h3>Employee Information</h3>";
+	    echo "Name: " . $employee->getName() . "<br>";
+	    echo "Age: " . $employee->getAge() . "<br>";
+	    echo "Team: " . $employee->getTeam() . "<br>";
+	    echo "Role: " . $employee->getRole() . "<br>";
+	    echo "Address: " . $employee->getAddress() . "<br>";
 	?>
 
 </body>

@@ -1,6 +1,5 @@
 <?php 
 	class Person {
-	    // Properties with protected access modifier to allow inheritance
 	    protected $name;
 	    protected $age;
 	    protected $address;
@@ -11,7 +10,6 @@
 	        $this->address = $address;
 	    }
 
-	    // Getter and setter methods for name
 	    public function getName() {
 	        return $this->name;
 	    }
@@ -20,7 +18,6 @@
 	        $this->name = $name;
 	    }
 
-	    // Getter and setter methods for age
 	    public function getAge() {
 	        return $this->age;
 	    }
@@ -29,7 +26,6 @@
 	        $this->age = $age;
 	    }
 
-	    // Getter and setter methods for address
 	    public function getAddress() {
 	        return $this->address;
 	    }
@@ -41,6 +37,12 @@
 
 	class Student extends Person {
 	    protected $studentId;
+
+	    public function __construct($name, $age, $address, $studentId) {
+	    	// Call the constructor of the parent class (Person)
+	        parent::__construct($name, $age, $address); // This initializes properties inherited from the Person class
+	        $this->studentId = $studentId;
+	    }
 
 	    public function getStudentId() {
 	        return $this->studentId;
@@ -54,6 +56,13 @@
 	class Employee extends Person {
 	    protected $team;
 	    protected $role;
+
+	    public function __construct($name, $age, $address, $team, $role) {
+	    	// Call the constructor of the parent class (Person)
+	        parent::__construct($name, $age, $address); // This initializes properties inherited from the Person class
+	        $this->team = $team;
+	        $this->role = $role;
+	    }
 
 	    public function getTeam() {
 	        return $this->team;
@@ -71,14 +80,5 @@
 	        $this->role = $role;
 	    }
 	}
-
-	// Create instances of Person, Student, and Employee
-	$person = new Person('John Smith', 30, 'Quezon City, Metro Manila');
-	$student = new Student('Jane Doe', 20, 'Makati City, Metro Manila');
-	$student->setStudentId('2023-1980');
-	$employee = new Employee('Mark Blain', 35, 'Pasig City, Metro Manila');
-	$employee->setTeam('Tech Team');
-	$employee->setRole('Team Lead');
-
 
 ?>
