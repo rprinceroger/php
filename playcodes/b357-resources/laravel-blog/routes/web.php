@@ -14,9 +14,9 @@ use App\Http\Controllers\PostController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Auth::routes();
 
@@ -33,15 +33,3 @@ Route::post('/posts',[PostController::class,'store']);
 //define a route that will return a view containing all posts
 
 Route::get('/posts',[PostController::class,'index']);
-
-//S02 Activity
-Route::get('/', [PostController::class, 'welcome']);
-
-//S03 Discussion Start
-
-//define a route that will return a view containig only the authenticated user's post
-Route::get('/myPosts',[PostController::class,'myPosts']);
-
-//define a route wherein a view showing a specific post with matching URL parameter ID will be returned to the user
-
-Route::get('/posts/{id}',[PostController::class,'show']);

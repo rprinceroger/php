@@ -48,40 +48,7 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::all();
-        return view('posts.index')->with('posts',$posts);
+        return view('posts.index')->with('dogs',$posts);
     }
-
-
-    // S02 Activity
-    // action that will return a view showing three random blog post
-    public function welcome(){
-        $posts = Post::inRandomOrder()
-        ->limit(3)
-        ->get();
-
-        return view('welcome')->with('posts', $posts);
-    }
-
-    //s03 Discussion start
-    public function myPosts()
-    {
-        if(Auth::user()){
-            $posts = Auth::user()->posts;
-
-            retrun view('posts.index')->with('posts',$posts);
-        }else{
-            return redirect('/login');
-        }
-
-
-    }
-
-    //action that will retrun a view showing a specific post using the URL parameter $id to query for the database entry to be shown
-    public function show()
-    {
-        $post = Post::find($id);
-        return view('posts.show')->with('post',$post);
-    }
-
 
 }
